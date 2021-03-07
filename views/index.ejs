@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/someuserdata" method="POST">
+        <input type="text" placeholder="podaj imię" id="imie" name="imie">
+        <input type="text" placeholder="podaj nazwisko" id="nazwisko" name="nazwisko">
+        <button type="submit">Potwierdź</button>
+    </form>
+
+    <ul>
+        <% for(let i=0;i<daneDoWyswietlenia.length;i++) { %>
+            <li> <%= daneDoWyswietlenia[i].imie %>  <%= daneDoWyswietlenia[i].nazwisko %></li>
+        <% } %>
+    </ul>
+</body>
+</html>
